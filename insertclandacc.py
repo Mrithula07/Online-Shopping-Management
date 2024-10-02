@@ -1,0 +1,11 @@
+import mysql.connector
+mc=mysql.connector.connect(host="localhost",user="root",password="mrithula",database="online_shopping_management")
+mr=mc.cursor()
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1001,'tshirt','available','SML',500)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1002,'jeans','available','SML',700)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1003,'blazer','available','SML',1500)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1004,'sweater','available','SML',100)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1005,'necklace','available','freesize',200)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1006,'earring','available','freesize',200)")
+mr.execute("INSERT INTO clothingandaccessories(cid,name,status,size,price)VALUES(1007,'watch','available','freesize',500)")
+mc.commit()

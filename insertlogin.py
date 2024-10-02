@@ -1,0 +1,10 @@
+import mysql.connector
+mc=mysql.connector.connect(host="localhost",user="root",password="mrithula",database="online_shopping_management")
+mr=mc.cursor()
+mr.execute("insert into login(cid,name,email,password,phone,address)values(101,'Anita','ani123@gmail.com','ani12345','9876543210','#23,south mada st,mylapore,chennai-4')")
+mr.execute("insert into login(cid,name,email,password,phone,address)values(102,'Bala','balu25@gmail.com','kosmos','9675831861','#56,richie st,tnagar,chennai-17')")
+mr.execute("insert into login(cid,name,email,password,phone,address)values(103,'Clara','ammu@yahoo.com','123rose','9839642187','#36,north st,adyar,chennai-20')")
+mr.execute("insert into login(cid,name,email,password,phone,address)values(104,'Kavin','vin987@hotmail.com','tiger','9008624642','#12,appovo gramini st,mandaveli,chennai-28')")
+mr.execute("insert into login(cid,name,email,password,phone,address)values(105,'Priya','59riya@gmail.com','oreo59','9764333398','#87,3rd cross st,alwarpet,chennai-18')")
+mc.commit()
+print(mr.rowcount,'records inserted')

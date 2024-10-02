@@ -1,0 +1,17 @@
+import mysql.connector
+con=mysql.connector.connect(host="localhost",user="root",password="mrithula",database="online_shopping_management")
+mycursor=con.cursor()
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2101','LAMP','AVAILABLE','550W,WHITE',250)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2102','CEILING FAN','AVAILABLE','BLACK',2500)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2103','AIR CONDITIONER','AVAILABLE','4 STAR ,110W',15000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2104','AIR PURIFIER','AVAILABLE','BLACK,365watts',5500)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2105','REFRIDGIRATOR','AVAILABLE','4 STAR ,110W',25000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2106','SOFA','AVAILABLE','5 SEATER,BEIGE COLOUR',25000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2107','SOFA','AVAILABLE','5 SEATER,BLACK COLOUR',25000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2108','WARDROBE','AVAILABLE','Sliding wardrobe,White with black colour,117cm*176cm',35000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2109','WARDROBE','AVAILABLE','Open wardrobe,BROWN COLOUR,TEAK WOOD,120CM*180CM',45000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2110','CHAIR','AVAILABLE','Single seater chair, Black color,teak wood',2500)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2111','STUDY TABLE','AVAILABLE','100CM*100CM, ROSE WOOD, brown colour,',15000)")
+mycursor.execute("INSERT INTO homeappliance_and_furniture(hfid,name,status,specification,price)VALUES('2112','TV UNIT','AVAILABLE','117cm*100cm,Rose wood, BEIGE WITH BROWN COLOUR',25000)")
+con.commit()
+
